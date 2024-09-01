@@ -12,13 +12,21 @@ class CustomerViewSet(viewsets.ModelViewSet):
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
 
+# URL : http://127.0.0.1:8000/products/
+
+# URL : http://127.0.0.1:8000/products/2/ - for update and delete
+
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
+# URL : http://127.0.0.1:8000/carts/
+
 class CartViewSet(viewsets.ModelViewSet):
     queryset = Cart.objects.all()
     serializer_class = CartSerializer
+
+# URL : http://127.0.0.1:8000/order-details/
 
 class OrderDetailViewSet(viewsets.ModelViewSet):
     queryset = OrderDetail.objects.all()
@@ -36,7 +44,7 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
 
-# register 
+# register -- http://127.0.0.1:8000/register/
 @api_view(['POST'])
 def register(request):
     user = User.objects.create_user(

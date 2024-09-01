@@ -1,2 +1,52 @@
-# Backend - for Soper
+# Backend - Soper
+
+# To Do List:
+    env - done
+
+# Data base
+    data.json
+
+# Data structure
+
+1. MODEL 1: User - id, city, street, phone, image, user(Connection with 
+user MODEL)  = DONE -- ????
+
+2. MODEL 2: Customer -id, city, street, phone, image, user_id(connection 
+with user model) =  = DONE
+
+3. MODEL 3: Product - id, product_type, price, description, image, 
+created_time = DONE
+
+4. MODEL 4: Cart - id, user_id(connection with user model), products_id
+(connection with products model), created_time = DONE
+
+5. MODEL 5: OrderDetail - id, cart_id(connection with cart model), 
+product_id(connection with products model), amount, total_price, 
+created_time = DONE
+
+# Technologies
+
+ - Backend: Python with Django framework, CORS
+
+# Begin:
+
+1. Activate the virtual environment.
+
+2. Install the requirements:
+   - For macOS: `pip3 install -r requirements.txt`
+   - For other systems: `pip install -r requirements.txt`
+
+3. Run the program:
+   - For macOS: `python3 app.py`
+   - For other systems: `python app.py`
+
+4. You can delete the data in the database file and 
+write your own data from scratch. 
+It will work.
+
+
+        For improvements, suggestions, and 
+        constructive feedback, I am always happy to 
+        hear from you. Enjoy and good luck!
+
 
